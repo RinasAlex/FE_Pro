@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cf6a87;
+    color: aliceblue;
+}
+
+.random__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: #e7406f;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 42px;
+    margin: 50px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em;
+    text-align: center;
+}
+
+.randomCat__img {
+    max-width: 500px;
+}
+
+.random__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #e7406f;
+}
+
+.random__user p {
+    background-color: #e7406f;
+}
+
+.random__joke p{
+    background-color: #e7406f;
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: aqua;
+}
+
+input{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 7px;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+    
+
+.btnCreate{
+    background: transparent;
+    margin: 7px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid  rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.filter__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.filter__container input{
+    border: 1px solid red;
+    
+}

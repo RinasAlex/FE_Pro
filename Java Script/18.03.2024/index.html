@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form id="productForm">
+        <div class="input__field">
+            <label for="productName">Название товара</label>
+            <input id="productName" type="text">
+        </div>
+        <div class="input__field">
+            <label for="productPrice">Цена товара</label>
+            <input id="productPrice" type="number">
+        </div>
+        <div class="input__field">
+            <label for="productCount">Количество товара</label>
+            <input id="productCount" type="number">
+        </div>
+        <button type="submit" class="btnCreate">Create</button>
+    </form>
+
+    <div class="filter__container">
+        <div>
+            <label for="">фильтрация по названию</label>
+            <input type="text" name="" id="filterByName">
+        </div>
+
+        <div>
+            <label for="">фильтрация по цене</label>
+            <input type="text" name="" id="filterByPrice">
+        </div>
+
+    </div>
+
+    <ul id="productList" class="product__list">
+
+    </ul>
+    <script src="./script.js"></script>
+</body>
+
+</html>

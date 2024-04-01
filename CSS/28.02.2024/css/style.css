@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0 300px 0;
+    background: url("../img/foto.jpg") no-repeat center center /cover;
+    position: relative;
+}
+
+.intro h1 {
+    font-size: 61px;
+    max-width: 40%;
+    text-align: center;
+    color: white;
+}
+
+.intro h5 {
+    font-size: 18px;
+    margin: 20px 0 40px 0;
+    color: white;
+}
+
+.box {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 100px;
+    max-height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.box li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.box h3 {
+    font-size: 72px;
+    color: #F7654A;
+}
+
+.box h4 {
+    font-size: 36px;
+}
+
+.box h5 {
+    font-size: 18px;
+    color: gray;
+}
+
+.project h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 70px 0 40px 0;
+}
+
+.project_item {
+    max-width: 358px;
+    padding: 50px;
+}
+
+.project_item h4 {
+    font-size: 24px;
+}
+
+.project_item p {
+    font-size: 18px;
+}
+
+.project_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner {
+    background: #F7654A;
+    padding: 30px 40px 45px;
+
+}
+
+.text h3 {
+    color: white;
+    font-size: 48px;
+
+}
+
+.text h4 {
+    color: white;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content button {
+    border: none;
+    padding: 14px 25px;
+}
+
+.service h3 {
+    text-align: center;
+    font-size: 36px;
+    margin: 150px 0 66px 0;
+}
+
+.service_item {
+    background: #f7f7f7;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 21px;
+    padding: 59px 90px;
+    text-align: center;
+}
+
+.service_list {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 35px 30px;
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 36px;
+    margin: 112px 0 60px 0;
+}
+
+.contact_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact_info {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}

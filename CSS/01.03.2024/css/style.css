@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#3B1D60;
+
+}
+
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.right{
+    justify-self: end;
+}
