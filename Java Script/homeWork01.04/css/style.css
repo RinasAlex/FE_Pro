@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+    max-width: 1440px;
+}
+
+header {
+    height: 75px;
+    background-color: #333331;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 63px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.icon img {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 12px 0;
+}
+
+.icon h2 {
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+#btn__modal {
+    background-color: #333331;
+    color: white;
+    text-decoration: none;
+}
+
+.about__as h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 29px 0;
+}
+
+.text__block {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin: 0 100px;
+}
+
+.text__item p {
+    font-size: 14px;
+}
+
+.text__item h4 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.instruction h4 {
+    font-size: 16px;
+    margin: 60px 0 40px 100px;
+}
+
+.instruction__block {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 100px;
+}
+
+.instruction__item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.instruction__item h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.instruction__item p {
+    font-size: 14px;
+}
+
+.reviews__text h4 {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.reviews__text p {
+    font-size: 14px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    margin: 40px 100px;
+}
+
+footer {
+    background-color: #333331;
+    height: 145px;
+
+}
+
+.modal__windows h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 29px 0;
+}
+
+.fetch__modal {
+    margin: 100px 0 500px 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 60px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.fetch__modal:active {
+    border: 2px solid rgb(0, 0, 0, 0.7);
+}
+
+/* .modal__content {
+    
+} */
+
+.modal__block {
+    border: 1px solid #000000;
+    width: 533px;
+    height: 196px;
+    top: 256px;
+    left: 472px;
+    border-radius: 8px;
+    padding: 30px 10px;
+}
+
+.modal__title {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.modal__title h4 {
+    font-size: 16px;
+}
+
+.modal__title p {
+    font-size: 14px;
+}
+
+.modal__body {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.modal__body h4 {
+    font-size: 16px;
+}
+
+.modal__body p {
+    font-size: 14px;
+}
