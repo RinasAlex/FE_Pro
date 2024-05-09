@@ -1,0 +1,244 @@
+$primaryColor: #1B3764;
+$secondaryColor: #FFCA42;
+$mainTextColor: #969AA0;
+$thirdPartyColor: #B4C7E7;
+
+@mixin resertFile {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin cardoFont {
+    font-weight: 400;
+    font-family: "Cardo", serif;
+    line-height: 33px;
+
+}
+
+@mixin interFont {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 21px;
+
+}
+
+* {
+    @include resertFile();
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    max-width: 520px;
+    @include cardoFont();
+    color: white;
+    line-height: 78px;
+    font-size: 64px;
+
+}
+
+h3 {
+    font-size: 42px;
+    @include cardoFont();
+    color: $primaryColor;
+}
+
+p {
+    font-size: 19px;
+    @include interFont();
+    color: $mainTextColor;
+}
+
+h4 {
+    font-size: 24px;
+    @include cardoFont();
+    letter-spacing: 0.38px;
+    color: $primaryColor;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $primaryColor;
+    padding-top: 30px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+
+
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        nav {
+            ul {
+                display: flex;
+                gap: 45px;
+
+                li {
+                    @include interFont();
+
+                    &:first-child {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.order__btn {
+    padding: 12px 40px;
+    @include cardoFont();
+    font-size: 19px;
+    background-color: $secondaryColor;
+    outline: none;
+    border: none;
+}
+
+.intro__section {
+    background-color: $primaryColor;
+}
+
+.intro {
+    background-color: $primaryColor;
+    padding: 100px 0 75px 0;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    &__left {
+        h2 {
+            font-size: 21px;
+            @include cardoFont();
+            padding-left: 48px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 35px;
+                background: $secondaryColor;
+                left: 0;
+                top: 45%;
+            }
+        }
+
+        h5 {
+            font-size: 18px;
+            @include interFont();
+            color: $thirdPartyColor;
+        }
+
+        &-btns {
+            margin: 40px 0;
+
+            button {
+                &:first-child {
+                    margin-right: 50px;
+                }
+
+                &:last-child {
+                    @include cardoFont();
+                    font-size: 19px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: white;
+
+                }
+            }
+        }
+
+        &-review {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            color: white;
+
+            &_item {
+                position: relative;
+
+                &::before {
+                    content: '';
+
+                }
+
+                h4 {
+                    color: white;
+                    margin-bottom: 12px;
+                    @include cardoFont();
+                }
+
+                div {
+                    color: $secondaryColor;
+                    @include interFont();
+
+                }
+            }
+        }
+    }
+}
+
+.author {
+    h3 {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        gap: 48px;
+
+        &-item {
+            display: flex;
+            gap: 30px;
+            
+            &_text{
+
+            }
+
+            h2 {
+                @include cardoFont();
+                font-size: 32px;
+                margin-bottom: 7px;
+                color: $primaryColor;
+            }
+
+            div {
+                @include interFont();
+                color: $secondaryColor;
+                font-size: 21px;
+            }
+
+            p {
+                padding: 16px 0;
+                line-height: 28px;
+            }
+
+            h4 {
+                padding-left: 26px;
+
+                &::before {}
+            }
+
+
+        }
+    }
+}

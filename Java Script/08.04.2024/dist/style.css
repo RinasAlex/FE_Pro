@@ -1,0 +1,19 @@
+body {
+  background-color: aqua;
+}
+
+.container {
+  background-color: aquamarine;
+  border: 1px solid rebeccapurple;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.container__item {
+  background-color: azure;
+  color: green;
+  border: 1px solid rebeccapurple;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

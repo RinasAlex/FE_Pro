@@ -1,0 +1,23 @@
+$border--primary: 8px;
+$border--color: rebeccapurple;
+body{
+    background-color: aqua;
+}
+
+.container{
+    background-color: aquamarine;
+    border: 1px solid $border--color;
+    border-radius: $border--primary;
+    padding: 10px 20px;
+
+    &__item{
+        background-color: azure;
+        color: green;
+        border: 1px solid $border--color;
+        border-radius: $border--primary;
+        padding: 10px 20px;
+    }
+}
+
+
+

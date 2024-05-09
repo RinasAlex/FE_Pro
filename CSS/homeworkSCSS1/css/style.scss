@@ -1,0 +1,462 @@
+$LatoFont: "Lato", sans-serif;
+$firstColor: #EBEBEB;
+$secondColor: #005FA3;
+$paddingSize: 80px 220px 50px 200px;
+
+
+@mixin MerriweatherFont {
+    font-family: "Merriweather", serif;
+    font-size: 36px;
+    line-height: 69.39px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    height: 118px;
+    max-width: 1440px;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 23px;
+
+        &__block {
+            background-color: $firstColor;
+            width: 51px;
+            height: 118px;
+            left: 331px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        h2 {
+            font-family: "Merriweather", serif;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 49.78px;
+            color: $secondColor;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 68px;
+        list-style: none;
+        margin-top: 44px;
+
+        li {
+            font-size: $LatoFont;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 16.8px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+.title {
+    background-image: url(../img/photo_2024-04-14_17-02-00.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: $paddingSize;
+        text-align: left;
+
+        h1 {
+            @include MerriweatherFont();
+            color: white;
+        }
+
+        button {
+            width: 180px;
+            height: 50px;
+            font-size: 14px;
+            font-family: $LatoFont;
+            background-color: $secondColor;
+            color: white;
+            border: none;
+        }
+
+        .navigator {
+            display: flex;
+            justify-content: space-between;
+
+            .point {
+                display: flex;
+                flex-direction: row;
+                align-items: end;
+                gap: 30px;
+
+                div {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: #FFFFFF;
+                    opacity: 40%;
+
+                    &:nth-child(3) {
+                        opacity: 100%;
+                    }
+                }
+            }
+
+            .arrow {
+                display: flex;
+                flex-direction: row;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba($color: white, $alpha: 0.20);
+                    color: white;
+
+                    &:nth-child(2) {
+                        background-color: rgba($color: white, $alpha: 0.50)
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.service__container {
+    background-color: $firstColor;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: $paddingSize;
+
+    h4 {
+        color: #BDBDBD;
+        font-family: $LatoFont;
+        size: 14px;
+    }
+
+    h1 {
+        @include MerriweatherFont();
+    }
+
+    .service__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        &-item {
+            background-image: url(../img/Rectangle\ 2.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 350px;
+            height: 360px;
+            display: flex;
+            align-items: end;
+            padding-bottom: 45px;
+            padding-left: 45px;
+
+            &:first-child {
+                opacity: 0.7;
+
+            }
+
+            p {
+                color: white;
+                font-size: 18px;
+                font-family: $LatoFont;
+            }
+
+        }
+    }
+}
+
+.aboutus__container {
+    padding: $paddingSize;
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+
+    .aboutus__text {
+
+        h4 {
+            color: #BDBDBD;
+            font-family: $LatoFont;
+            size: 14px;
+        }
+
+        h1 {
+            @include MerriweatherFont();
+            width: 100px;
+
+            #ivanov {
+                color: $secondColor;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-family: $LatoFont;
+            width: 400px;
+            line-height: 24.84px;
+        }
+    }
+
+    .aboutus__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+
+        &-item {
+            width: 255px;
+            height: 255px;
+            background-color: $firstColor;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 20px;
+            padding-left: 30px;
+
+            h1 {
+                font-size: 48px;
+                font-family: $LatoFont;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $LatoFont;
+                line-height: 18.48px;
+                width: 140px;
+            }
+
+            a {
+                font-size: 14px;
+                font-family: $LatoFont;
+                line-height: 18.48px;
+                color: $secondColor;
+                padding-top: 30px;
+            }
+
+            &:nth-child(4) {
+                background-color: $secondColor;
+                color: white;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.clients__container {
+    background-color: $firstColor;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: $paddingSize;
+
+    h4 {
+        color: #BDBDBD;
+        font-family: $LatoFont;
+        size: 14px;
+    }
+
+    h1 {
+        @include MerriweatherFont();
+    }
+
+    .clients__block {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        img {
+            width: 255px;
+            height: 130px;
+        }
+    }
+
+    .navigator {
+        display: flex;
+        justify-content: space-between;
+
+        .point {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            gap: 30px;
+
+            div {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: none;
+                background-color: $secondColor;
+                opacity: 40%;
+
+                &:nth-child(3) {
+                    opacity: 100%;
+                }
+            }
+        }
+
+        .arrow {
+            display: flex;
+            flex-direction: row;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                width: 60px;
+                height: 60px;
+                background-color: rgba($color: $secondColor, $alpha: 0.20);
+                color: white;
+
+                &:nth-child(2) {
+                    background-color: rgba($color: $secondColor, $alpha: 0.70)
+                }
+            }
+        }
+    }
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: $paddingSize;
+
+    h4 {
+        color: #BDBDBD;
+        font-family: $LatoFont;
+        size: 14px;
+    }
+
+    h1 {
+        @include MerriweatherFont();
+    }
+
+    .reviews__text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 1110px;
+        height: 320px;
+        background-color: $firstColor;
+        padding: 45px 95px;
+
+        p {
+            font-family: $LatoFont;
+            font-size: 18px;
+            line-height: 24.84px;
+        }
+
+        .reviews__date {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+
+            img {
+                width: 80px;
+                height: 80px;
+                background-color: $firstColor;
+            }
+
+            h5 {
+                font-family: $LatoFont;
+                font-size: 18px;
+                line-height: 24.84px;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: $LatoFont;
+                line-height: 19.32px;
+                font-size: 14px;
+            }
+
+        }
+    }
+
+    .navigator {
+        display: flex;
+        justify-content: space-between;
+
+        .point {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            gap: 30px;
+
+            div {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: none;
+                background-color: $secondColor;
+                opacity: 40%;
+
+                &:nth-child(3) {
+                    opacity: 100%;
+                }
+            }
+        }
+
+        .arrow {
+            display: flex;
+            flex-direction: row;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                width: 60px;
+                height: 60px;
+                background-color: rgba($color: $secondColor, $alpha: 0.20);
+                color: white;
+
+                &:nth-child(2) {
+                    background-color: rgba($color: $secondColor, $alpha: 0.70)
+                }
+            }
+        }
+    }
+}
+
+.footer__container{
+    font-size: $LatoFont;
+    font-size: 14px;
+    line-height: 19.32px;
+    height: 118px;
+   display: flex;
+   justify-content: space-between;
+    padding: $paddingSize
+}
