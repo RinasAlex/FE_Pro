@@ -1,0 +1,66 @@
+
+.about__as h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 29px 0;
+}
+
+.text__block {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin: 0 100px;
+}
+
+.text__item p {
+    font-size: 14px;
+}
+
+.text__item h4 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.instruction h4 {
+    font-size: 16px;
+    margin: 60px 0 40px 100px;
+}
+
+.instruction__block {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 100px;
+}
+
+.instruction__item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.instruction__item h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.instruction__item p {
+    font-size: 14px;
+}
+
+.reviews__text h4 {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.reviews__text p {
+    font-size: 14px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    margin: 40px 100px;
+}
+

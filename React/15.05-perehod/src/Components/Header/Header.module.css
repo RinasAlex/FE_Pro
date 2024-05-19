@@ -1,0 +1,15 @@
+.header__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 131px;
+    height: 121px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

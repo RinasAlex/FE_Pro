@@ -1,0 +1,58 @@
+header {
+  height: 75px;
+  background-color: #333331;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 63px;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.icon img {
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 12px 0;
+}
+
+.icon h2 {
+  font-size: 24px;
+  padding: 24px 0;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #333331;
+  height: 145px;
+
+}
+
+.home__page{
+  height: 800px;
+}
+
+.home__page h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 29px 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
